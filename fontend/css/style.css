@@ -1,0 +1,44 @@
+    /* Add your CSS styles here */
+    body {
+        background: url('../images/bg.png') no-repeat center center fixed;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .message {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .user-message {
+        background-color: #ff8c00;
+        color: #fff;
+        text-align: right;
+    }
+
+    .Subuser-message{
+        background-color: #ff8c00;
+        color: #fff;
+        text-align: center;
+    }
+
+    .bot-message {
+        background-color: #94abf5;
+        color: #fff;
+        text-align: left;
+    }
+    .text_align_center{
+        text-align: center;
+    }

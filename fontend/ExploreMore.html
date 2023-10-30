@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreMore</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            background-image: url('./images/bg.png'); /* Add your background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #fff; /* Title color set to white */
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+
+        .rounded-button {
+            padding: 10px 20px;
+            margin: 30px;
+            background-color: #ffffff;
+            color: #fa8212;
+            border: none;
+            border-radius: 30px; /* Rounded corners */
+            padding: 20px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: large;
+        }
+
+        .rounded-button:hover {
+            background-color: #00508b;
+        }
+    </style>
+</head>
+<body>
+    <h1>ExploreMore</h1>
+    <div class="button-container">
+        <button class="rounded-button" id="relaxing-button" onclick="openRelaxing()">Relaxing Yourself</button>
+        <button class="rounded-button" id="story-button">Story Room</button>
+        <button class="rounded-button" id="game-button">Game Heaven</button>
+        <button class="rounded-button" id="enjoyment-button">Enjoyment Space</button>
+    </div>
+    <script>
+        function openRelaxing(){
+            window.location.href="./relax.html";
+        }
+    </script>
+</body>
+</html>

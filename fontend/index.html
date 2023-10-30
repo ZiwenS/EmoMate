@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmoMate</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            text-align: center;
+            background-image: url('./images/bg.png'); /* Add your background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Optional: keeps the background fixed while scrolling */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px; /* Increased font size for the title */
+            text-decoration: underline; /* Underline for the title */
+            margin-bottom: 20px; /* Add some space below the title */
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px; /* Add some space below the paragraph */
+        }
+
+        .conversation-button {
+            text-decoration: none;
+            background-color: #ff8400; /* Background color for the button */
+            color: #fff; /* Text color for the button */
+            padding: 10px 20px; /* Adjust padding for button size */
+            border-radius: 5px; /* Rounded corners for the button */
+            font-weight: bold; /* Bold text for the button */
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EmoMate</h1>
+        <p>
+            How are you today,<br>
+            would you wanna talk to me?
+        </p>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <a href= './conversation.html' class="conversation-button">Start a Conversation</a>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

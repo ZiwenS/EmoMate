@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: url('./images/bg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #C46454;
+            width: 80%; /* Adjust the width as needed */
+            max-width: 400px; /* Set a maximum width for responsiveness */
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        /* Style the additional text with a font size of 14px and text-align left */
+        .additional-text {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #C46454;
+            text-align: left;
+        }
+
+        /* Style the form elements */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 50%; /* Make the input fields fill the container width */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #C46454;
+            border-radius: 3px;
+            font-size: 16px;
+            color: #C46454;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+
+        button[type="submit"],
+        button[type="button"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #C46454;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        button[type="button"] {
+            background-color: #C46454;
+            color: #fff;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Hey! Nice to meet you!</h1>
+        <!-- Add the additional text below with the specified styles (font-size: 14px, text-align: left) -->
+        <p class="additional-text">
+            Through the Emotion Regulation Journey, we will provide you with the best-matched emotional regulation materials to support you in achieving personal emotional goals and balancing your emotional status.<br><br>
+            You should only participate in the study if you want to: not participating will not disadvantage you. Before the regulation starts, to let us know more about you, we would like to invite you to complete some questions, which may take 7-8 minutes. Then the whole regulation process may take 20-30 minutes, and you could quit anytime.
+        </p>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="button-container">
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="openUser()">New User</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>

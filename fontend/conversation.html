@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Conversation</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" >
+</head>
+<body style="padding: 2vw;">
+    <div class="container">
+        <div class="message bot-message">
+            <b>Hi, how are you feeling today?</b>
+        </div>
+        <div class="message user-message">
+            <p><b>Please select the emotions you are feeling now:</b></p>
+            <button id="emotionFantastic" class="emotion-button" value="Fantastic">I'm feeling fantastic today, thank you!😊</button><br>
+            <button id="emotionGood" class="emotion-button" value="Good">I'm doing well, thanks!😄</button><br>
+            <button id="emotionAlright" class="emotion-button" value="Alright">I'm feeling alright, nothing too exciting.😳</button><br>
+            <button id="emotionNotGreat" class="emotion-button" value="NotGreat">I'm not doing too great, unfortunately.😣</button><br>
+            <button id="emotionBad" class="emotion-button" value="Bad">I'm feeling quite bad today.😢</button><br>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="./js/conversation.js"> </script>
+</body>
+</html> 

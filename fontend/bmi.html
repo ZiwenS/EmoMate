@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Page</title>
+    <style>
+        body {
+            background: url('./images/bg.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #C46454;
+            text-align: center;
+          
+            width: 80%; /* Adjust the width as needed */
+            min-width: 400px; /* Set a maximum width for responsiveness */
+        }
+
+        .register-container{
+            margin:3vw;
+            padding: 3vw;
+        }
+        .register-container form p label{
+            display: block;
+        }
+        .register-container form p{
+            margin: 0;
+            width: 100%;
+        }
+        h1 {
+            font-size: 28px;
+        }
+
+        /* Style the additional text with a font size of 14px and text-align left */
+        .additional-text {
+            font-size: 14px;
+            margin-top: 20px;
+            color: #C46454;
+            text-align: left;
+        }
+
+        /* Style the form elements */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 50%; /* Make the input fields fill the container width */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #C46454;
+            border-radius: 3px;
+            font-size: 16px;
+            color: #C46454;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+        }
+
+        button[type="submit"],
+        button[type="button"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            background-color: #C46454;
+            color: #fff;
+            margin-right: 5px;
+        }
+
+        button[type="button"] {
+            background-color: #C46454;
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        .topic_box{
+            width: 80vw;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: #C46454;
+        }
+        .topic_box h1{
+            text-align: center;
+        }
+        .topic_box .title{
+            font-size: x-large;
+        }
+        .topic_box .choose_box{
+            display: flex;
+            justify-content: center;
+        }
+        .topic_box .choose_box p{
+            width: 20%;
+            border: 1px solid #C46454;
+            padding: 1vw;
+            text-align: center;
+        }
+        .topic_box .choose_box p input{
+            cursor: pointer;
+        }
+        .topic_box .choose_box p label{
+            cursor: pointer;
+        } 
+        .topic_box .button_box{
+
+        } 
+        .topic_box .button_box button{
+
+        } 
+    </style>
+</head>
+<body>
+    <div class="login-container register-container" id="start_box" style="width: 80vw;opacity: 1;">
+        <h1>How I am in general</h1>
+        <!-- Add the additional text below with the specified styles (font-size: 14px, text-align: left) -->
+        <p class="additional-text">
+            Here are a number of characteristics that may or may not apply to you.  For example, do you agree that you are someone who likes to spend time with others?  Please write a number next to each statement to indicate the extent to which you agree or disagree with that statement.
+        </p>
+        <form>
+            <div class="button-container" style="margin-top: 2rem;">
+                <button type="button" onclick="openStart()">Start Answering</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="topic_box" id="topic_box">
+        <!-- <div class="choose_title">
+            <h1>I am someone who…</h1>
+            <p class="title">1._____  Is talkative</p>
+        </div>
+        <div class="choose_content">
+            <div class="choose_box">
+                <p>
+                    <input type='radio' id="asd" name='radio' value="1" />
+                    <label for='asd'>Disagree Strongly</label>
+                </p>
+                <p>
+                    <input type='radio' id="asd2" name='radio' value="2" />
+                    <label for='asd2'>Disagree Strongly</label>
+                </p>
+            </div>
+            <div class="button_box">
+                <button type="button">Back</button>
+                <button type="button" style="position: absolute;right: 10%;">Submit</button>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bmi_list.js"></script>
+    <script src="./js/bmi.js"></script>
+</body>
+</html>
